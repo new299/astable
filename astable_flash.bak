@@ -1,0 +1,261 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:astable_flash-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L NPN Q1
+U 1 1 548E479B
+P 4000 4600
+F 0 "Q1" H 4000 4450 50  0000 R CNN
+F 1 "2N3904" H 4000 4750 50  0000 R CNN
+F 2 "Transistors_TO-220:TO-220_Bipolar-BCE_Vertical_LargePads" H 4000 4600 60  0001 C CNN
+F 3 "" H 4000 4600 60  0000 C CNN
+	1    4000 4600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L NPN Q2
+U 1 1 548E47FB
+P 5650 4600
+F 0 "Q2" H 5650 4450 50  0000 R CNN
+F 1 "2N3904" H 5650 4750 50  0000 R CNN
+F 2 "Transistors_TO-220:TO-220_Bipolar-BCE_Vertical_LargePads" H 5650 4600 60  0001 C CNN
+F 3 "" H 5650 4600 60  0000 C CNN
+	1    5650 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 548E48EF
+P 4300 4200
+F 0 "C1" H 4300 4300 40  0000 L CNN
+F 1 "100uF" H 4306 4115 40  0000 L CNN
+F 2 "Discret:C1" H 4338 4050 30  0001 C CNN
+F 3 "" H 4300 4200 60  0000 C CNN
+	1    4300 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L C C2
+U 1 1 548E4921
+P 5350 4200
+F 0 "C2" H 5350 4300 40  0000 L CNN
+F 1 "100uF" H 5356 4115 40  0000 L CNN
+F 2 "Discret:C1" H 5388 4050 30  0001 C CNN
+F 3 "" H 5350 4200 60  0000 C CNN
+	1    5350 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L R R3
+U 1 1 548E496A
+P 4500 3800
+F 0 "R3" V 4580 3800 40  0000 C CNN
+F 1 "1.2K" V 4507 3801 40  0000 C CNN
+F 2 "Discret:R3" V 4430 3800 30  0001 C CNN
+F 3 "" H 4500 3800 30  0000 C CNN
+	1    4500 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 548E4B2E
+P 5150 3800
+F 0 "R4" V 5230 3800 40  0000 C CNN
+F 1 "1.2K" V 5157 3801 40  0000 C CNN
+F 2 "Discret:R3" V 5080 3800 30  0001 C CNN
+F 3 "" H 5150 3800 30  0000 C CNN
+	1    5150 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R6
+U 1 1 548E4B71
+P 5750 3850
+F 0 "R6" V 5830 3850 40  0000 C CNN
+F 1 "200" V 5757 3851 40  0000 C CNN
+F 2 "Discret:R3" V 5680 3850 30  0001 C CNN
+F 3 "" H 5750 3850 30  0000 C CNN
+	1    5750 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 548E4BA7
+P 3900 3850
+F 0 "R1" V 3980 3850 40  0000 C CNN
+F 1 "200" V 3907 3851 40  0000 C CNN
+F 2 "Discret:R3" V 3830 3850 30  0001 C CNN
+F 3 "" H 3900 3850 30  0000 C CNN
+	1    3900 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED_RGB D1
+U 1 1 548E520A
+P 4800 5350
+F 0 "D1" V 5200 5400 50  0000 C CNN
+F 1 "LED_RGB" V 5200 5150 50  0000 C CNN
+F 2 "LEDs:LED_RGB_Getian_GT-P6PRGB4303" H 4800 5300 60  0001 C CNN
+F 3 "" H 4800 5300 60  0000 C CNN
+	1    4800 5350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3400 4800 5750 4800
+Wire Wire Line
+	5750 4100 5750 4400
+Wire Wire Line
+	5550 4200 6200 4200
+Connection ~ 5750 4200
+Wire Wire Line
+	3900 4100 3900 4400
+Wire Wire Line
+	3750 4200 4100 4200
+Connection ~ 3900 4200
+Wire Wire Line
+	4500 4200 5150 4600
+Wire Wire Line
+	5150 4600 5450 4600
+Wire Wire Line
+	5150 4200 4500 4600
+Wire Wire Line
+	4500 4600 4200 4600
+Wire Wire Line
+	5150 4050 5150 4200
+Wire Wire Line
+	3400 3550 5750 3550
+Connection ~ 5150 3550
+Connection ~ 4500 3550
+Wire Wire Line
+	3750 4200 3750 5050
+Wire Wire Line
+	3750 5050 4600 5050
+$Comp
+L R R5
+U 1 1 548E5495
+P 5250 5400
+F 0 "R5" V 5330 5400 40  0000 C CNN
+F 1 "200" V 5257 5401 40  0000 C CNN
+F 2 "Discret:R3" V 5180 5400 30  0001 C CNN
+F 3 "" H 5250 5400 30  0000 C CNN
+	1    5250 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 548E5516
+P 4350 5400
+F 0 "R2" V 4430 5400 40  0000 C CNN
+F 1 "200" V 4357 5401 40  0000 C CNN
+F 2 "Discret:R3" V 4280 5400 30  0001 C CNN
+F 3 "" H 4350 5400 30  0000 C CNN
+	1    4350 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 5650 5250 5650
+Wire Wire Line
+	5250 5150 5250 4800
+Connection ~ 5250 4800
+Wire Wire Line
+	4600 5650 4350 5650
+Wire Wire Line
+	4350 5150 4350 4800
+Connection ~ 4350 4800
+$Comp
+L SWITCH_INV SW1
+U 1 1 548E57F2
+P 6200 4700
+F 0 "SW1" H 6000 4850 50  0000 C CNN
+F 1 "SWITCH_INV" H 6050 4550 50  0000 C CNN
+F 2 "cr2032:SWITCH3P" H 6200 4700 60  0001 C CNN
+F 3 "" H 6200 4700 60  0000 C CNN
+	1    6200 4700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6100 5200 5700 5200
+Wire Wire Line
+	5700 5200 5700 4900
+Wire Wire Line
+	5700 4900 4800 4900
+Wire Wire Line
+	4800 4900 4800 5050
+Wire Wire Line
+	6300 5200 6300 5300
+Wire Wire Line
+	6300 5300 5600 5300
+Wire Wire Line
+	5600 5300 5600 5000
+Wire Wire Line
+	5600 5000 5000 5000
+Wire Wire Line
+	5000 5000 5000 5050
+Connection ~ 5000 5650
+$Comp
+L BATTERY BT1
+U 1 1 548F4998
+P 3400 4250
+F 0 "BT1" H 3400 4450 50  0000 C CNN
+F 1 "BATTERY" H 3400 4060 50  0000 C CNN
+F 2 "cr2032:BC2003-CR2032" H 3400 4250 60  0001 C CNN
+F 3 "" H 3400 4250 60  0000 C CNN
+	1    3400 4250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3400 3550 3400 3950
+Connection ~ 3900 3550
+Wire Wire Line
+	3400 4550 3400 4800
+Connection ~ 3900 4800
+Wire Wire Line
+	5750 3550 5750 3600
+Wire Wire Line
+	3900 3550 3900 3600
+Wire Wire Line
+	4500 4050 4500 4200
+$EndSCHEMATC

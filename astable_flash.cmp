@@ -1,0 +1,94 @@
+Cmp-Mod V01 Created by Cvpcb (2014-11-17 BZR 5289)-product   date = Mon 15 Dec 2014 09:17:59 AM EST
+
+BeginCmp
+TimeStamp = /548F4998;
+Reference = BT1;
+ValeurCmp = BATTERY;
+IdModule  = cr2032:BC2003-CR2032;
+EndCmp
+
+BeginCmp
+TimeStamp = /548E48EF;
+Reference = C1;
+ValeurCmp = 100uF;
+IdModule  = Discret:C1;
+EndCmp
+
+BeginCmp
+TimeStamp = /548E4921;
+Reference = C2;
+ValeurCmp = 100uF;
+IdModule  = Discret:C1;
+EndCmp
+
+BeginCmp
+TimeStamp = /548E520A;
+Reference = D1;
+ValeurCmp = LED_RGB;
+IdModule  = LEDs:LED_RGB_Getian_GT-P6PRGB4303;
+EndCmp
+
+BeginCmp
+TimeStamp = /548E479B;
+Reference = Q1;
+ValeurCmp = 2N3904;
+IdModule  = Transistors_TO-220:TO-220_Neutral123_Vertical_MountedFromLS_LargePads;
+EndCmp
+
+BeginCmp
+TimeStamp = /548E47FB;
+Reference = Q2;
+ValeurCmp = 2N3904;
+IdModule  = Transistors_TO-220:TO-220_Neutral123_Vertical_MountedFromLS_LargePads;
+EndCmp
+
+BeginCmp
+TimeStamp = /548E4BA7;
+Reference = R1;
+ValeurCmp = 200;
+IdModule  = Discret:R3;
+EndCmp
+
+BeginCmp
+TimeStamp = /548E5516;
+Reference = R2;
+ValeurCmp = 200;
+IdModule  = Discret:R3;
+EndCmp
+
+BeginCmp
+TimeStamp = /548E496A;
+Reference = R3;
+ValeurCmp = 1.2K;
+IdModule  = Discret:R3;
+EndCmp
+
+BeginCmp
+TimeStamp = /548E4B2E;
+Reference = R4;
+ValeurCmp = 1.2K;
+IdModule  = Discret:R3;
+EndCmp
+
+BeginCmp
+TimeStamp = /548E5495;
+Reference = R5;
+ValeurCmp = 200;
+IdModule  = Discret:R3;
+EndCmp
+
+BeginCmp
+TimeStamp = /548E4B71;
+Reference = R6;
+ValeurCmp = 200;
+IdModule  = Discret:R3;
+EndCmp
+
+BeginCmp
+TimeStamp = /548E57F2;
+Reference = SW1;
+ValeurCmp = SWITCH_INV;
+IdModule  = cr2032:SWITCH3P;
+EndCmp
+
+EndListe
